@@ -1,18 +1,20 @@
-## Getting Started
+Implementação do sistema de gerenciamento bancário em Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+- Desenvolvida a classe `ContaBancaria` com os seguintes métodos:
+  - `depositar(double valor)`: Permite realizar depósitos na conta.
+  - `sacar(double valor)`: Realiza um saque, verificando se o saldo é suficiente.
+  - `verificarSaldo()`: Retorna o saldo atual da conta.
+  - `transferir(ContaBancaria contaDestino, double valor)`: Realiza a transferência de valores entre contas.
 
-## Folder Structure
+- Criada a classe `Banco` para gerenciar as contas bancárias:
+  - `adicionarConta(ContaBancaria conta)`: Adiciona uma nova conta ao banco.
+  - `buscarConta(int numeroConta)`: Permite buscar uma conta pelo número da conta.
+  - `listarContas()`: Exibe uma lista com todas as contas cadastradas no banco.
 
-The workspace contains two folders by default, where:
+- Implementação do método `main` com operações de teste:
+  - Criação de contas bancárias.
+  - Realização de depósitos, saques e transferências entre contas.
+  - Impressão dos saldos das contas para verificar o funcionamento das operações.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Este commit representa a implementação inicial do sistema de contas bancárias, com foco em operações básicas como depósito, saque, transferência e verificação de saldo.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
